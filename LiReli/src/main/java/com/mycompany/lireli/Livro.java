@@ -6,10 +6,11 @@ package com.mycompany.lireli;
 
 /**
  *
- * @author igorc
+ * @author Igor Coimbra Vargas Lorenzeto 201865045AC e Gabriela Machado Gazola 201865162AB
  */
 public class Livro {
     private String titulo;
+    private String autor;
     private String genero;
     private int paginas;
     private String ondeParou;
@@ -37,8 +38,16 @@ public class Livro {
         return ondeParou;
     }
 
+    public String getAutor() {
+        return autor;
+    }
+
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
     public void setGenero(String genero) {
