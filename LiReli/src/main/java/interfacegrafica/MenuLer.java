@@ -151,7 +151,7 @@ public class MenuLer implements ActionListener, MouseListener, ListSelectionList
     @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == botaoAddLivro) {
-            new AdicionarLivro(usuarioAtivo, "Ler");
+            new AdicionarLivro(usuarioAtivo, "ler");
             frame.dispose();
         }
 
@@ -208,7 +208,7 @@ public class MenuLer implements ActionListener, MouseListener, ListSelectionList
             String titulo = infos[0].substring(10); //titulo do livro
 
             //chama o menu de açoes possiveis para aquele item
-   
+            new ExcluirLendo(usuarioAtivo, titulo);
             frame.dispose();
         }
     }

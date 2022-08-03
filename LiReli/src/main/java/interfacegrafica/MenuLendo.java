@@ -162,7 +162,7 @@ public class MenuLendo implements ActionListener, MouseListener, ListSelectionLi
     @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == botaoAddLivro) {
-            new AdicionarLivro(usuarioAtivo, "Lendo");
+            new AdicionarLivro(usuarioAtivo, "lendo");
             frame.dispose();
         }
 
