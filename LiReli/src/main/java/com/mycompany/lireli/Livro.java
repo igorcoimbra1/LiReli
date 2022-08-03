@@ -12,14 +12,23 @@ public class Livro {
     private String titulo;
     private String autor;
     private String genero;
-    private int paginas;
+    private String paginas;
     private String ondeParou;
+    protected String status;
 
-    public Livro(String titulo, String genero, int paginas, String ondeParou) {
+    public Livro() {
+       
+    }
+    
+    public void cadastro(String titulo, String genero, String paginas, String status) {
         this.titulo = titulo;
         this.genero = genero;
         this.paginas = paginas;
-        this.ondeParou = ondeParou;
+        this.status = status;
+    }
+    
+    public void editarOndeParou(String onde){
+        ondeParou = onde;
     }
 
     public String getTitulo() {
@@ -30,7 +39,7 @@ public class Livro {
         return genero;
     }
 
-    public int getPaginas() {
+    public String getPaginas() {
         return paginas;
     }
 
@@ -40,6 +49,10 @@ public class Livro {
 
     public String getAutor() {
         return autor;
+    }
+
+    public String getStatus() {
+        return status;
     }
 
     public void setTitulo(String titulo) {
@@ -54,14 +67,27 @@ public class Livro {
         this.genero = genero;
     }
 
-    public void setPaginas(int paginas) {
+    public void setPaginas(String paginas) {
         this.paginas = paginas;
     }
 
     public void setOndeParou(String ondeParou) {
         this.ondeParou = ondeParou;
     }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
     
+    public String listarLendo(){
+        if(status.equals("lendo")){
+            return ("[LIVRO]   " + titulo + "   -   "  + autor + "   -   "  + genero + "   -   "  + paginas + "   -   clique para atualizar onde parou");
+        }
+        return ("[Livro]   " + titulo + "   -   " + autor + "   -   " + genero + "   -   " + paginas + "   -   " + ondeParou);
+    }
     
+    public String listarLer(){
+        return ("[Livro]   " + titulo + "   -   " + autor + "   -   " + genero + "   -   " + paginas);
+    }
     
 }

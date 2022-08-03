@@ -14,7 +14,8 @@ import interfacegrafica.MenuPrincipal;
  */
 public class Execucao {
      public static void main(String[] args) {
-        new LoginSenha();
-        new PaginaLogin(LoginSenha.getLoginInfo());
+        //new LoginSenha();
+        //new PaginaLogin(LoginSenha.getLoginInfo());
+        new MenuPrincipal("Igor");
     } 
 }

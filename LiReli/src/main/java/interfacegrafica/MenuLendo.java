@@ -221,7 +221,7 @@ public class MenuLendo implements ActionListener, MouseListener, ListSelectionLi
             //System.out.println("titulo: " + titulo);
             
             //chama o menu referente às opçoes daquele item
-            new ExcluirAtualizar(usuarioAtivo, titulo, categoria);
+            new ExcluirAtualizar(usuarioAtivo, titulo);
             frame.dispose();
            
         }

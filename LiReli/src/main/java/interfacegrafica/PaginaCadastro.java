@@ -42,7 +42,7 @@ public class PaginaCadastro implements ActionListener, MouseListener {
     private JButton botaoVoltar = new JButton();
     private TitledBorder descricao;
 
-    private FrameLiReli frame = new FrameLiReli());
+    private FrameLiReli frame = new FrameLiReli();
 
     private HashMap<String, String> infoLogin = new HashMap<>();
     

@@ -15,6 +15,7 @@ import com.mycompany.lireli.Livro;
 import com.mycompany.lireli.ListaLendo;
 import com.mycompany.lireli.ListaLer;
 
+
 /**
  *
  * @author igorc
@@ -58,9 +59,9 @@ public class BaseLivros {
 
                     if (infos.length == 6) { //a linha indica um livro
                         Livro f = new Livro();
-                        f.cadastro(infos[1], infos[2], infos[3], infos[5], infos[4]);
+                        f.cadastro(infos[1], infos[2], infos[4], infos[5]);
 
-                        if (infos[5].equals("Ler")) {
+                        if (infos[5].equals("ler")) {
                             listaLer.adicionarLivro(f);
                         } else {
                             listaLendo.adicionarLivro(f);
@@ -68,7 +69,7 @@ public class BaseLivros {
                     }
                     }
                 }
-            }
+            
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("ERRO NO CONSTRUTOR DE BASE LIVROS");
@@ -85,7 +86,7 @@ public class BaseLivros {
     
     //a ação de apagar funciona reescrevendo o arquivo em um auxiliar, excluindo o que se pretende apagar,
     //depois apga o arquivo antigo e, por fim, troca o nome do auxiliar para o nome do antigo
-    public void apagarLivro(String usuarioAtivo, String tituloLivro, String livro) {
+    public void apagarLivro(String usuarioAtivo, String tituloLivro) {
         String arqvAux = "temporario.txt";
         File arqvAntigo = new File("BaseLivros.txt");
         File arqvNovo = new File(arqvAux);
@@ -118,10 +119,10 @@ public class BaseLivros {
                     username = infos[0].trim();
                     titulo = infos[1].trim();
                     categoria = "livro";
-                }
+                } 
 
                 // caso não seja o usuario e o livro que estamos procurando, copiamos a linha para o novo arquivo
-                if (!username.equals(usuarioAtivo) || !titulo.equals(tituloLivro) || !categoria.equals(livro)) {
+                if (!username.equals(usuarioAtivo) || !titulo.equals(tituloLivro)) {
                     pw.println(linha);
                 }
             }
@@ -139,13 +140,13 @@ public class BaseLivros {
 
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("ERRO NO METODO APAGAR Livro");
+            System.out.println("ERRO NO METODO APAGAR LIVRO");
         }
     }
 
     //a edição funciona reescrevendo o arquivo em um auxiliar, acrescentando o que se pretende mudar, 
     //depois apga o arquivo antigo e, por fim, troca o nome do auxiliar para o nome do antigo
-    public void editarPagina(String usuarioAtivo, String tituloLivro, String novoPagina, String livro) {
+    public void editarPagina(String usuarioAtivo, String tituloLivro, String novoOndeParou) {
         String arqvAux = "temporario.txt";
         File arqvAntigo = new File("BaseLivros.txt");
         File arqvNovo = new File(arqvAux);
@@ -179,14 +180,14 @@ public class BaseLivros {
                     username = infos[0].trim();
                     titulo = infos[1].trim();
                     categoria = "livro";
-                }
+                } 
 
                 // se for a linha do livro que se busca editar, altera a linha
-                if (username.equals(usuarioAtivo) && titulo.equals(tituloLivro) && categoria.equals(livro)) {
+                if (username.equals(usuarioAtivo) && titulo.equals(tituloLivro)) {
                     if (categoria.equals("livro")) {
                         pw.println(infos[0] + ";" + infos[1] + ";" + infos[2] + ";" + infos[3] + ";"
-                                + infos[4] + ";" + "onde parou: " + novoPagina);
-                    }
+                                + infos[4] + ";" + "onde parou: " + novoOndeParou);
+                    } 
                 } else { //senao, apenas copia para o novo arquivo
                     pw.println(linha);
                 }
@@ -205,13 +206,13 @@ public class BaseLivros {
 
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("ERRO NO METODO EDITAR PAGINA LIVRO");
+            System.out.println("ERRO NO METODO EDITAR ONDE PAROU LIVRO");
         }
     }
 
     //a edição funciona reescrevendo o arquivo em um auxiliar, acrescentando o que se pretende mudar, 
     //depois apga o arquivo antigo e, por fim, troca o nome do auxiliar para o nome do antigo
-    public void editarStatus(String usuarioAtivo, String tituloLivro, String novoStatus, String livro) {
+    public void editarStatus(String usuarioAtivo, String tituloLivro, String novoStatus) {
         String arqvAux = "temporario.txt";
         File arqvAntigo = new File("BaseLivros.txt");
         File arqvNovo = new File(arqvAux);
@@ -245,14 +246,14 @@ public class BaseLivros {
                     username = infos[0].trim();
                     titulo = infos[1].trim();
                     categoria = "livro";
-                }
+                } 
 
                 // se for a linha do livro que se busca editar, altera a linha
-                if (username.equals(usuarioAtivo) && titulo.equals(tituloLivro) && categoria.equals(livro)) {
+                if (username.equals(usuarioAtivo) && titulo.equals(tituloLivro)) {
                     if (categoria.equals("livro")) {
                         pw.println(infos[0] + ";" + infos[1] + ";" + infos[2] + ";" + infos[3] + ";"
                                 + infos[4] + ";" + novoStatus);
-                    
+                    } 
                 } else { //senao, apenas copia para o novo arquivo
                     pw.println(linha);
                 }
@@ -275,3 +276,4 @@ public class BaseLivros {
         }
     }
 }
+

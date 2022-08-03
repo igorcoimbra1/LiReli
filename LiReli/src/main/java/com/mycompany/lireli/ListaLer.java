@@ -12,24 +12,24 @@ import java.util.ArrayList;
  */
 public class ListaLer {
     
-    private ArrayList <Livro> ler = new ArrayList<>();
+    private ArrayList <String> ler = new ArrayList<>();
 
     public ListaLer() {
     }
 
     public void adicionarLivro(Livro livro){
-        ler.add(livro);
+        ler.add(livro.listarLer());
     }
 
     public int getSize(){
         return ler.size();
     }
     
-    public Livro getPorIndice(int indice){
+    public String getPorIndice(int indice){
         return ler.get(indice);
     }
     
-    public ArrayList<Livro> getLista()
+    public ArrayList<String> getLista()
     {
         return ler;
     }
