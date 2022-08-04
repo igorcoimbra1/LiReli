@@ -22,7 +22,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 /**
  *
- * @author igorc
+ * @author Igor Coimbra Vargas Lorenzeto 201865045AC e Gabriela Machado Gazola 201865162AB
  */
 public class MenuPrincipal implements ActionListener, MouseListener {
     private ImageIcon logo = new ImageIcon("src/main/java/imagens/logo.png");

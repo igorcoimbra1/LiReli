@@ -10,7 +10,7 @@ import usuario.LoginSenha;
 import interfacegrafica.MenuPrincipal;
 /**
  *
- * @author igorc
+ * @author Igor Coimbra Vargas Lorenzeto 201865045AC e Gabriela Machado Gazola 201865162AB
  */
 public class Execucao {
      public static void main(String[] args) {

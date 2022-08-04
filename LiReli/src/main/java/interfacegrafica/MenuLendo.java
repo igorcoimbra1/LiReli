@@ -32,7 +32,7 @@ import com.mycompany.lireli.ListaLendo;
 import usuario.BaseLivros;
 /**
  *
- * @author igorc
+ * @author Igor Coimbra Vargas Lorenzeto 201865045AC e Gabriela Machado Gazola 201865162AB
  */
 public class MenuLendo implements ActionListener, MouseListener, ListSelectionListener {
     
