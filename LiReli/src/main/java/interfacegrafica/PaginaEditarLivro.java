@@ -81,7 +81,7 @@ public class PaginaEditarLivro implements ActionListener, MouseListener {
 
         //botão
         botaoAtualizar.addActionListener(this);
-        botaoAtualizar.setBackground(new Color(248, 161, 31));
+        botaoAtualizar.setBackground(new Color(214, 53, 106));
         botaoAtualizar.setText("Atualizar");
         botaoAtualizar.setFocusable(false); // tira a marquinha que fica no texto do botão
         botaoAtualizar.setPreferredSize(new Dimension(160, 30));
@@ -162,7 +162,7 @@ public class PaginaEditarLivro implements ActionListener, MouseListener {
     @Override
     public void mouseEntered(MouseEvent me) {
         if (me.getSource() == botaoAtualizar) {
-            botaoAtualizar.setBackground(new Color(255, 183, 76));
+            botaoAtualizar.setBackground(new Color(220, 59, 112));
         } else if (me.getSource() == botaoVoltar) {
             botaoVoltar.setForeground(Color.WHITE);
         }
@@ -171,7 +171,7 @@ public class PaginaEditarLivro implements ActionListener, MouseListener {
     @Override
     public void mouseExited(MouseEvent me) {
         if (me.getSource() == botaoAtualizar) {
-            botaoAtualizar.setBackground(new Color(248, 161, 31));
+            botaoAtualizar.setBackground(new Color(214, 53, 106));
         } else if (me.getSource() == botaoVoltar) {
             botaoVoltar.setForeground(new Color(115, 115, 115));
         }

@@ -59,7 +59,7 @@ public class BaseLivros {
 
                     if (infos.length == 6) { //a linha indica um livro
                         Livro f = new Livro();
-                        f.cadastro(infos[1], infos[2], infos[4], infos[5]);
+                        f.cadastro(infos[1], infos[2], infos[3], infos[4], infos[5]);
 
                         if (infos[5].equals("ler")) {
                             listaLer.adicionarLivro(f);
@@ -184,10 +184,10 @@ public class BaseLivros {
 
                 // se for a linha do livro que se busca editar, altera a linha
                 if (username.equals(usuarioAtivo) && titulo.equals(tituloLivro)) {
-                    if (categoria.equals("livro")) {
+                    
                         pw.println(infos[0] + ";" + infos[1] + ";" + infos[2] + ";" + infos[3] + ";"
                                 + infos[4] + ";" + "onde parou: " + novoOndeParou);
-                    } 
+                    
                 } else { //senao, apenas copia para o novo arquivo
                     pw.println(linha);
                 }

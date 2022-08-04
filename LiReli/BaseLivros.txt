@@ -1,0 +1,7 @@
+Igor;jkansbdj;sdajkfhbua;asfdaw;1432;ler
+Igor;eu amo;romance;luiza;100;ler
+Igor;aaaa;bbbb;cccc;500;lendo;onde parou: 450
+Igor;aaa;bbb;ccc;123;lendo;onde parou: 100
+Igor;aaa;bbb;ccc;123;lendo;onde parou: 120
+Igor;aaa;bbb;ccc;122;lendo;onde parou: 1
+Igor;aaaa;bbbb;cccc;1234;onde parou: 123

@@ -20,9 +20,10 @@ public class Livro {
        
     }
     
-    public void cadastro(String titulo, String genero, String paginas, String status) {
+    public void cadastro(String titulo, String genero, String autor, String paginas, String status) {
         this.titulo = titulo;
         this.genero = genero;
+        this.autor = autor;
         this.paginas = paginas;
         this.status = status;
     }

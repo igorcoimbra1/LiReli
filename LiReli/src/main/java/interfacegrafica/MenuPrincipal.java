@@ -48,7 +48,7 @@ public class MenuPrincipal implements ActionListener, MouseListener {
 
         // botao Ler
         botaoLer.addActionListener(this);
-        botaoLer.setBackground(new Color(248, 161, 31));
+        botaoLer.setBackground(new Color(214, 53, 106));
         botaoLer.setFocusable(false); // tira a marquinha que fica no texto do botão
         botaoLer.setPreferredSize(new Dimension(200, 50));
         botaoLer.setHorizontalTextPosition((JButton.CENTER)); // alinhamento horizontal do texto
@@ -63,7 +63,7 @@ public class MenuPrincipal implements ActionListener, MouseListener {
 
         // botao Lendo
         botaoLendo.addActionListener(this);
-        botaoLendo.setBackground(new Color(248, 161, 31));
+        botaoLendo.setBackground(new Color(214, 53, 106));
         botaoLendo.setFocusable(false); // tira a marquinha que fica no texto do botão
         botaoLendo.setPreferredSize(new Dimension(200, 50));
         botaoLendo.setHorizontalTextPosition((JButton.CENTER)); // alinhamento horizontal do texto
@@ -127,20 +127,20 @@ public class MenuPrincipal implements ActionListener, MouseListener {
     @Override
     public void mouseEntered(MouseEvent me) {
         if (me.getSource() == botaoLer) {
-            botaoLer.setBackground(new Color(255, 183, 76));
+            botaoLer.setBackground(new Color(220, 59, 112));
         }
         if (me.getSource() == botaoLendo) {
-            botaoLendo.setBackground(new Color(255, 183, 76));
+            botaoLendo.setBackground(new Color(220, 59, 112));
         }
     }
 
     @Override
     public void mouseExited(MouseEvent me) {
         if (me.getSource() == botaoLer) {
-            botaoLer.setBackground(new Color(248, 161, 31));
+            botaoLer.setBackground(new Color(214, 53, 106));
         }
         if (me.getSource() == botaoLendo) {
-            botaoLendo.setBackground(new Color(248, 161, 31));
+            botaoLendo.setBackground(new Color(214, 53, 106));
         }
     }
 }

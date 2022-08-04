@@ -109,7 +109,7 @@ public class PaginaCadastro implements ActionListener, MouseListener {
 
         //botão
         botaoCadastrar.addActionListener(this);
-        botaoCadastrar.setBackground(new Color(248, 161, 31));
+        botaoCadastrar.setBackground(new Color(214, 53, 106));
         botaoCadastrar.setText("Cadastrar");
         botaoCadastrar.setFocusable(false); // tira a marquinha que fica no texto do botão
         botaoCadastrar.setPreferredSize(new Dimension(160, 30));
@@ -218,7 +218,7 @@ public class PaginaCadastro implements ActionListener, MouseListener {
     @Override
     public void mouseEntered(MouseEvent me) {
         if (me.getSource() == botaoCadastrar) {
-            botaoCadastrar.setBackground(new Color(255, 183, 76));
+            botaoCadastrar.setBackground(new Color(220, 59, 112));
         }else if (me.getSource() == botaoVoltar) {
             botaoVoltar.setForeground(Color.WHITE);
         }
@@ -227,7 +227,7 @@ public class PaginaCadastro implements ActionListener, MouseListener {
     @Override
     public void mouseExited(MouseEvent me) {
         if (me.getSource() == botaoCadastrar) {
-            botaoCadastrar.setBackground(new Color(248, 161, 31));
+            botaoCadastrar.setBackground(new Color(214, 53, 106));
         }else if (me.getSource() == botaoVoltar) {
             botaoVoltar.setForeground(new Color(115, 115, 115));
         }

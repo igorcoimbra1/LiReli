@@ -42,7 +42,7 @@ public class PaginaLogin implements ActionListener, MouseListener {
     private FrameLiReli frame = new FrameLiReli();
 
     private HashMap<String, String> infoLogin = new HashMap<String, String>();
-    private ArrayList<String> listaAssistir = new ArrayList<String>();
+    private ArrayList<String> listaLer = new ArrayList<String>();
 
     public PaginaLogin(HashMap<String, String> infoLoginOriginal) {
         
@@ -187,7 +187,7 @@ public class PaginaLogin implements ActionListener, MouseListener {
     @Override
     public void mouseEntered(MouseEvent me) {
         if (me.getSource() == botaoEntrar) {
-            botaoEntrar.setBackground(new Color(255, 183, 76));
+            botaoEntrar.setBackground(new Color(218, 56, 106));
         } else if (me.getSource() == botaoCadastrar) {
             botaoCadastrar.setForeground(Color.WHITE);
         }

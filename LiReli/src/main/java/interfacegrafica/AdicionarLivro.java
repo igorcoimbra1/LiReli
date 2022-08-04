@@ -125,7 +125,7 @@ public class AdicionarLivro implements ActionListener, MouseListener {
 
         //botões
         botaoAdicionar.addActionListener(this);
-        botaoAdicionar.setBackground(new Color(248, 161, 31));
+        botaoAdicionar.setBackground(new Color(214, 53, 106));
         botaoAdicionar.setText("Adicionar");
         botaoAdicionar.setFocusable(false); // tira a marquinha que fica no texto do botão
         botaoAdicionar.setPreferredSize(new Dimension(150, 30));
@@ -194,7 +194,7 @@ public class AdicionarLivro implements ActionListener, MouseListener {
     public void mouseEntered(MouseEvent me) {
         //muda de cor o botão caso o mouse esteja por cima dele, para dar uma resposta visual ao usuario
         if (me.getSource() == botaoAdicionar) {
-            botaoAdicionar.setBackground(new Color(255, 183, 76));
+            botaoAdicionar.setBackground(new Color(220, 59, 112));
         } else if (me.getSource() == botaoVoltar) {
             botaoVoltar.setForeground(Color.WHITE);
         }
@@ -204,7 +204,7 @@ public class AdicionarLivro implements ActionListener, MouseListener {
     public void mouseExited(MouseEvent me) {
         //muda de cor o botão caso o mouse esteja fora dele (padrão)
         if (me.getSource() == botaoAdicionar) {
-            botaoAdicionar.setBackground(new Color(248, 161, 31));
+            botaoAdicionar.setBackground(new Color(214, 53, 106));
         } else if (me.getSource() == botaoVoltar) {
             botaoVoltar.setForeground(new Color(115, 115, 115));
         }

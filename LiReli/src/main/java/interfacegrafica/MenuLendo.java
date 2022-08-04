@@ -66,7 +66,7 @@ public class MenuLendo implements ActionListener, MouseListener, ListSelectionLi
 
         // botoes
         botaoAddLivro.addActionListener(this);
-        botaoAddLivro.setBackground(new Color(248, 161, 31));
+        botaoAddLivro.setBackground(new Color(214, 53, 106));
         botaoAddLivro.setText("Livro");
         botaoAddLivro.setIcon(plus);
         botaoAddLivro.setIconTextGap(10);
@@ -187,7 +187,7 @@ public class MenuLendo implements ActionListener, MouseListener, ListSelectionLi
     @Override
     public void mouseEntered(MouseEvent me) {
         if (me.getSource() == botaoAddLivro) {
-            botaoAddLivro.setBackground(new Color(255, 183, 76));
+            botaoAddLivro.setBackground(new Color(220, 59, 112));
         }
         if (me.getSource() == botaoHome) {
             botaoHome.setIcon(homeBranca);
@@ -197,7 +197,7 @@ public class MenuLendo implements ActionListener, MouseListener, ListSelectionLi
     @Override
     public void mouseExited(MouseEvent me) {
         if (me.getSource() == botaoAddLivro) {
-            botaoAddLivro.setBackground(new Color(248, 161, 31));
+            botaoAddLivro.setBackground(new Color(214, 53, 106));
         }
         if (me.getSource() == botaoHome) {
             botaoHome.setIcon(home);
